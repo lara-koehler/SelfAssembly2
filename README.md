@@ -8,7 +8,7 @@ This codes are used to run simulated annealing of particles with anisotropic int
 
 2/ Create the lattice files
 - install json and subprocess if it is not already installed in your python environemnt (with pip install for instance)
-- Create a /Lattice subfolder where the files of the lattice geometries will be stored
+- Create a /Lattice subfolder in your working folder, where the files of the lattice geometries will be stored
 - Open the file BuildLattice.py, modify the directory to the folder you just created, and run it. It should create a lot of  json files in the Lattice folder.
 
 3/ Compile the C++ file 
