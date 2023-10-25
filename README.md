@@ -17,6 +17,12 @@ If this generates errors, it might be related to how your operating system deals
 
 4/ Get ready to launch simulation
 - Create a /Results subfolder in your working folder
-- Open the LaunchSimulationExample notebook
-- Change the "localDirectory" and "projectFolderName" to the correct ones.
+- Open the file System.py, go to the class "ReadSeveralSystems" and modify the "directoryResults" to the Results folder you created.
+
+  So far, it is the following :
+  " if local :
+    directoryResults = '/Users/lara/Documents/SelfAssembly2/Results/' "
+  
+- Open the LaunchSimulationExample jupyter notebook
+- Change the "localDirectory" and "projectFolderName" to the correct ones in the first cell of the notebook. 
 - Get started with the notebook!
