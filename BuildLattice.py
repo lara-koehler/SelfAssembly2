@@ -12,6 +12,11 @@ import matplotlib.pyplot as plt
 import json
 
 
+
+directory = '/Users/lara/Documents/SelfAssembly2/Lattice/'
+
+
+
 n_particles_max = 6
 
     
@@ -980,34 +985,14 @@ rotations = [#(0,1,2,3), (4,5,6,7)
 # myLattices.append(BCC)
         
 
-# directory = '/Users/lara/Documents/SelfAssembly2/Lattice/'
-# for lattice in myLattices:
-#     lattice.save_lattice_file(directory)
-#     for n_particles in range (1, n_particles_max+1):
-#         lattice.save_structure_file(directory, n_particles)
+for lattice in myLattices:
+    lattice.save_lattice_file(directory)
+    for n_particles in range (1, n_particles_max+1):
+        lattice.save_structure_file(directory, n_particles)
     
 
     
     
-    
-    #%%
-phi = (1+np.sqrt(5))/2
-e1 = [phi, 1/phi, 0]
-e2 = [1,1,1]
-e3 = [1/phi, 0, phi]
-e4 = [1,-1,1]
-e5 = [phi, -1/phi, 0]
-
-norm = np.linalg.norm(e1)
-es = [e1,e2,e3,e4,e5]
-es2 = [np.array(e) for e in es]
-e1,e2,e3,e4,e5 = es2
-
-cos = np.cos(np.pi/6)
-R = rotation_matrix_axis_angle(0, 1, 0, cos)
-
-new_es = [R.dot(e) for e in es2]
-
 
     
     
